@@ -1,0 +1,75 @@
+<!--This is to use a CSS file in normal HTML. In ao3 you don't write this from here-->
+<head>
+    <link rel="stylesheet" href="main_chat_style.css">
+</head>
+<!--to here-->
+<body>
+    <!--Character name. Replace "character1" with your own character class, and the "Alfa" with your character's name.-->
+    <p class="name character1">Alfa</p>
+    <!--From here-->
+    <div class="messagerow">
+        <!--Recieved message. in class, "recieved" makes it to be the recieved message. "first" makes it the first message in chain, giving it the "triangle"-->
+        <div class="recieved first">
+            <!--Message text-->
+            <p>This is an example</p>
+            <!--Timestamp-->
+            <p class="timerecieved">11:50pm</p>
+        </div>
+    </div>
+    <!--To here, you have a recieved text message. Copy all of this and change the text. To make your own messages.-->
+    <!--This is a sent message. Do the same.-->
+    <div class="messagerow">
+        <div class="sent">
+            <!--Again, the "first" makes the triangle appear.-->
+            <div class="sentbubble first">
+                <!--Message text-->
+                <p align="right">Cool! 😁<!--You can use emotes as well.--></p>
+                <!--Timestamp-->
+                <p align="right" class="timesent" >11:50pm</p>
+            </div>
+        </div>
+    </div>
+    <!--Sent message ends here.-->
+    <p class="name character2">Beta</p>
+    <div class="messagerow">
+        <div class="recieved first">
+            <p>I'm another character!</p>
+            <p class="timerecieved">11:50pm</p>
+        </div>
+    </div>
+    <div class="messagerow">
+        <!--The "first" is missing from the class="[]" so the triange doesen't appear.-->
+        <div class="recieved">
+            <p>And I'm sending multiple messages in a row</p>
+            <p class="timerecieved">11:50pm</p>
+        </div>
+    </div>
+    <div class="messagerow">
+        <div class="recieved">
+            <p>But only the first one has the little triangle, as it should!</p>
+            <p class="timerecieved">11:50pm</p>
+        </div>
+    </div>
+    <div class="messagerow">
+        <div class="sent"> 
+            <div class="sentbubble first">
+                <p align="right">This also works for whoever is replying.</p>
+                <p align="right" class="timesent">11:50pm</p>
+            </div>
+        </div>
+    </div>
+    <div class="messagerow">
+        <div class="sent"> 
+            <div class="sentbubble">
+                <p align="right">As you can see</p>
+                <p align="right" class="timesent">11:50pm</p>
+            </div>
+            <!--This is the "Seen" text. Just copy it from here-->
+            <p class="status" align="right"><span class="check seen">✓✓</span>Seen</p>
+            <!--This is the "Sent" text. It is commented, so it won't appear. Just copy it from here.-->
+            <!--
+            COPY THIS: <p class="status" align="right"><span class="check">✓</span>Sent</p>
+            -->
+        </div>
+    </div>
+</body>

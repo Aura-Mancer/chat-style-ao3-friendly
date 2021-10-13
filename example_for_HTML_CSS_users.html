@@ -1,0 +1,66 @@
+<!--This is to use a CSS file in normal HTML. In ao3 you don't write this from here-->
+<head>
+    <link rel="stylesheet" href="main_chat_style.css">
+</head>
+<!--to here-->
+<body>
+    <!--Character name. Use the class name and any of your characters' created class.-->
+    <p class="name character1">Alfa</p>
+    <!--Every message bubble is wrapped in a "messagerow" to keep them from overlapping-->
+    <div class="messagerow">
+        <!--Use the first class to give it the "triangle" that messages at the beggining of a chain have-->
+        <div class="recieved first">
+            <!--Message text-->
+            <p>This is an example</p>
+            <!--Timestamp-->
+            <p class="timerecieved">11:50pm</p>
+        </div>
+    </div>
+    <!--Sent message-->
+    <div class="messagerow">
+        <div class="sent">
+            <div class="sentbubble first">
+                <p align="right" >Cool! 😁</p><!--The aligned attribute is used so in the event that the user disables the Work Skin, it would remain legible.-->
+                <p align="right" class="timesent" >11:50pm</p>
+            </div>
+        </div>
+    </div>
+    <p class="name character2">Beta</p>
+    <div class="messagerow">
+        <div class="recieved first">
+            <p>I'm another character!</p>
+            <p class="timerecieved">11:50pm</p>
+        </div>
+    </div>
+    <div class="messagerow">
+        <div class="recieved">
+            <p>And I'm sending multiple messages in a row</p>
+            <p class="timerecieved">11:50pm</p>
+        </div>
+    </div>
+    <div class="messagerow">
+        <div class="recieved">
+            <p>But only the first one has the little triangle, as it should!</p>
+            <p class="timerecieved">11:50pm</p>
+        </div>
+    </div>
+    <div class="messagerow">
+        <div class="sent"> 
+            <div class="sentbubble first">
+                <p align="right">This also works for whoever is replying.</p>
+                <p align="right" class="timesent">11:50pm</p>
+            </div>
+        </div>
+    </div>
+    <div class="messagerow">
+        <div class="sent"> 
+            <div class="sentbubble">
+                <p align="right">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <p align="right" class="timesent">11:50pm</p>
+            </div>
+            <!--"Seen" and "Sent" texts.-->
+            <p class="status" align="right"><span class="check seen">✓✓</span>Seen</p>
+            <!--<p class="status" align="right"><span class="check">✓</span>Sent</p>-->
+        </div>
+    </div>
+</body>

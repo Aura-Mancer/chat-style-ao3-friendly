@@ -4,12 +4,14 @@
 p{
     margin: 2pt 0;
 }
+/*This encloses the message so the messages don't overlap eachother*/
 .messagerow{
     width: 100%;
     overflow: hidden;
     margin-top: 0px;
 }
-.senttext, .recieved{
+/*text bubbles*/
+.sentbubble, .recieved{
     padding: 10px;
     margin: 3px 10px;
     border-radius: 15px;
@@ -27,11 +29,11 @@ p{
     background-color: #e5e5ea;
     color:black;
     border-radius: 1.15rem;
-    line-height: 1.25;
+    line-height: 1.25rem;
     padding: 0.5rem .875rem;
 }
-
-.senttext.first:before{
+/*Triangles of the chat bubbles*/
+.sentbubble.first:before{
     content: "";
     height: 0px;
     position: absolute;
@@ -57,31 +59,36 @@ p{
     border-top: 15px solid #e5e5ea;
     border-bottom: 15px solid transparent;
 }
-.senttext{
+/*Sent bubble*/
+.sentbubble{
     text-align: right;
     background-color:#248bf5;
     color:white;
     padding-right: 2.5vw;
 }
-.senttext > p, .recieved > p{
+/* Text formatting for the text bubbles*/
+.sentbubble > p, .recieved > p{
     padding: 0.4vw;
     margin: 0;
     word-wrap: break-word;
 }
+/* Name formatting*/
 .name{
     font-weight: bold;
     font-size: 1.1em;
     margin: 10px 0px 0px 0px;
 }
-.name.blake{
+/*Differnt contacts/characters colours. Add ".name.[Your character name all in lower case] like seen here, and use a hex code to determine the colour. You can get this codes here: https://www.google.com/search?q=hex+color+picker Other CSS formatting can be used as well.*/
+.name.character1{
     color: #cb11f9;
 }
-.name.yang{
+.name.character2{
     color: #f9c63a;
 }
-.name.ruby{
+.name.character3{
     color: #ff0000;
 }
+/*Timestamps*/
 .timesent{
     font-size: 0.85em;
     color:#e6e6e6
@@ -90,6 +97,7 @@ p{
     font-size: 0.85em;
     color:#4b4b4b
 }
+/*Read recipts*/
 .status{
     text-align: right;
     margin: 0;
@@ -97,9 +105,10 @@ p{
 }
 .check{
     margin-right: 0.2em;
-    color:rgb(0, 191, 255);
+    
 }
 .seen.check{
     letter-spacing: -4pt;
     margin-right: 0.45em;
+    color:rgb(0, 191, 255);
 }
