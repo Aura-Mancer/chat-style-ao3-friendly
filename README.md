@@ -3,7 +3,7 @@
 
  (Please credit me in your notes.)
  
-![Example image](img\example_image.png)
+![Example image](img/example_image.png)
 
 ## Setup
 
