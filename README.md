@@ -16,8 +16,11 @@
    Change, or add characters, by coping that block of code, changing "character1" with your character's name with a text editor. Then, you can give it a colour. After "colour:" you will see a [hex code](https://www.w3schools.com/html/html_colors_hex.asp). Replace it with the desired hex code.
 
 3. After adding your characters, go to your ao3 profile (while logged in), and click on "Skins". Select "Work skins" and then "Create Work Skin"
+
    ![Help image](img/help1.png)
+   
    ![Help image](img/help2.png)
+   
 4. Fill in the details, and on the text field titled "CSS", copy and paste the CSS file with your modifications. Make sure to copy **all of it**.
 5. Enter the editing screen of the work you wish to use the skin on. After the language, you will see "Select Work Skin". Select the Work Skin you have created.
 ## Use
@@ -26,5 +29,5 @@ In the "Chapter Text" while editting your work, select HTML. In [the example for
 **If you are familiar with CSS**, [the example for HTML and CSS users](example_for_HTML_CSS_users.html) has comments more suited for people with your knowledge.
 
 #### Possible upgrades:
-[ ] Support for picture messages.
-[ ] Small wiki with further explanations.
+- Support for picture messages.
+- Small wiki with further explanations.
