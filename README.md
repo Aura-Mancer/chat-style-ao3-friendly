@@ -28,6 +28,6 @@ In the "Chapter Text" while editting your work, select HTML. In [the example for
 
 **If you are familiar with CSS**, [the example for HTML and CSS users](example_for_HTML_CSS_users.html) has comments more suited for people with your knowledge.
 
-#### Possible upgrades:
+## Possible upgrades:
 - Support for picture messages.
 - Small wiki with further explanations.
