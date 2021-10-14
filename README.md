@@ -24,9 +24,9 @@
 4. Fill in the details, and on the text field titled "CSS", copy and paste the CSS file with your modifications. Make sure to copy **all of it**.
 5. Enter the editing screen of the work you wish to use the skin on. After the language, you will see "Select Work Skin". Select the Work Skin you have created.
 ## Use
-In the "Chapter Text" while editting your work, select HTML. In [the example for writters, (or for those not familiar with CSS)](example_for_writters.html), you will have an example on the HTML code, with "comments". These comments do not affect the code, and are simply there to help you understand it. They will start with "`<!--`" an end with "`-->`".
+In the "Chapter Text" while editting your work, select HTML. In [the example for writters, (or for those not familiar with CSS)](HTML_examples\example_for_writters.html), you will have an example on the HTML code, with "comments". These comments do not affect the code, and are simply there to help you understand it. They will start with "`<!--`" an end with "`-->`".
 
-**If you are familiar with CSS**, [the example for HTML and CSS users](example_for_HTML_CSS_users.html) has comments more suited for people with your knowledge.
+**If you are familiar with CSS**, [the example for HTML and CSS users](HTML_examples\example_for_HTML_CSS_users.html) has comments more suited for people with your knowledge.
 
 ## Possible upgrades:
 - Support for picture messages.
