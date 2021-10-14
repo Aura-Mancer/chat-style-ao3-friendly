@@ -4,6 +4,7 @@
 p{
     margin: 2pt 0;
 }
+
 /*This encloses the message so the messages don't overlap eachother*/
 .messagerow{
     width: 100%;
@@ -11,13 +12,13 @@ p{
     margin-top: 0px;
 }
 /*text bubbles*/
-.sentbubble, .recieved{
+.sentbubble, .received{
     padding: 10px;
     margin: 3px 10px;
-    border-radius: 15px;
+    border-radius: 0.9rem; 
     position: relative;
 }
-.sent, .recieved{
+.sent, .received{
     max-width: 80%;
     position: relative;
 }
@@ -25,10 +26,9 @@ p{
     display: block;
     float: right;
 }
-.recieved{
+.received{
     background-color: #e5e5ea;
     color:black;
-    border-radius: 1.15rem;
     line-height: 1.25rem;
     padding: 0.5rem .875rem;
 }
@@ -46,7 +46,7 @@ p{
     top: 0px;
     width: 0px;
 }
-.recieved.first:before{
+.received.first:before{
     width: 0px;
     content: "";
     left: -13px;
@@ -67,7 +67,7 @@ p{
     padding-right: 2.5vw;
 }
 /* Text formatting for the text bubbles*/
-.sentbubble > p, .recieved > p{
+.sentbubble > p, .received > p{
     padding: 0.4vw;
     margin: 0;
     word-wrap: break-word;
@@ -93,7 +93,7 @@ p{
     font-size: 0.85em;
     color:#e6e6e6
 }
-.timerecieved{
+.timereceived{
     font-size: 0.85em;
     color:#4b4b4b
 }
@@ -111,4 +111,34 @@ p{
     letter-spacing: -4pt;
     margin-right: 0.45em;
     color:rgb(0, 191, 255);
+}
+
+/*Images*/
+.receivedimg{
+    border-radius: 1.15vw;
+    border-width: 2vw;
+    margin: 0;
+    max-width:35em;
+}
+.receivedimgbubble{
+    line-height: 1.25rem;
+    margin: 3px 10px;
+    border-radius: 0.9rem;
+    position: relative;
+    background-color: #e5e5ea;
+    color:black;
+    padding: 0.25em;
+}
+.receivedimgbubble:before{
+    width: 0px;
+    content: "";
+    left: -15px;
+    top: 0px;
+    height: 0px;
+    z-index: -3;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #e5e5ea;
+    border-top: 15px solid #e5e5ea;
+    border-bottom: 15px solid transparent;
 }
