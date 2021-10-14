@@ -12,7 +12,7 @@ p{
     margin-top: 0px;
 }
 /*text bubbles*/
-.sentbubble, .received{
+.sentbubble, .recievedbubble{
     padding: 10px;
     margin: 3px 10px;
     border-radius: 0.9rem; 
@@ -25,8 +25,11 @@ p{
 .sent{
     display: block;
     float: right;
+.recieved{
+    display: block;
+    float: left;
 }
-.received{
+.recievedbubble{
     background-color: #e5e5ea;
     color:black;
     line-height: 1.25rem;
@@ -46,7 +49,7 @@ p{
     top: 0px;
     width: 0px;
 }
-.received.first:before{
+.recievedbubble.first:before{
     width: 0px;
     content: "";
     left: -13px;
@@ -67,7 +70,7 @@ p{
     padding-right: 2.5vw;
 }
 /* Text formatting for the text bubbles*/
-.sentbubble > p, .received > p{
+.sentbubble > p, .recievedbubble > p{
     padding: 0.4vw;
     margin: 0;
     word-wrap: break-word;
