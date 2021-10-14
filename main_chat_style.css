@@ -11,7 +11,7 @@ p{
     margin-top: 0px;
 }
 /*text bubbles*/
-.sentbubble, .recieved{
+.sentbubble, .recievedbubble{
     padding: 10px;
     margin: 3px 10px;
     border-radius: 15px;
@@ -26,6 +26,10 @@ p{
     float: right;
 }
 .recieved{
+    display: block;
+    float: left;
+}
+.recievedbubble{
     background-color: #e5e5ea;
     color:black;
     border-radius: 1.15rem;
@@ -46,7 +50,7 @@ p{
     top: 0px;
     width: 0px;
 }
-.recieved.first:before{
+.recievedbubble.first:before{
     width: 0px;
     content: "";
     left: -13px;
@@ -67,7 +71,7 @@ p{
     padding-right: 2.5vw;
 }
 /* Text formatting for the text bubbles*/
-.sentbubble > p, .recieved > p{
+.sentbubble > p, .recievedbubble > p{
     padding: 0.4vw;
     margin: 0;
     word-wrap: break-word;

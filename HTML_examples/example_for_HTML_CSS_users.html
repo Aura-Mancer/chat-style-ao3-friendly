@@ -9,11 +9,13 @@
     <!--Every message bubble is wrapped in a "messagerow" to keep them from overlapping-->
     <div class="messagerow">
         <!--Use the first class to give it the "triangle" that messages at the beggining of a chain have-->
-        <div class="recieved first">
-            <!--Message text-->
-            <p>This is an example</p>
-            <!--Timestamp-->
-            <p class="timerecieved">11:50pm</p>
+        <div class="recieved">
+            <div class="recievedbubble first">
+                <!--Message text-->
+                <p>This is an example</p>
+                <!--Timestamp-->
+                <p class="timerecieved">11:50pm</p>
+            </div>
         </div>
     </div>
     <!--Sent message-->
@@ -27,21 +29,29 @@
     </div>
     <p class="name character2">Beta</p>
     <div class="messagerow">
-        <div class="recieved first">
-            <p>I'm another character!</p>
-            <p class="timerecieved">11:50pm</p>
+        <div class="recieved">
+            <div class="recievedbubble first">
+                <!--Message text-->
+                <p>I'm another character!</p>
+                <!--Timestamp-->
+                <p class="timerecieved">11:50pm</p>
+            </div>
         </div>
     </div>
     <div class="messagerow">
         <div class="recieved">
-            <p>And I'm sending multiple messages in a row</p>
-            <p class="timerecieved">11:50pm</p>
+            <div class="recievedbubble">
+                <p>And I'm sending multiple messages in a row</p>
+                <p class="timerecieved">11:50pm</p>
+            </div>
         </div>
     </div>
     <div class="messagerow">
         <div class="recieved">
-            <p>But only the first one has the little triangle, as it should!</p>
-            <p class="timerecieved">11:50pm</p>
+            <div class="recievedbubble">
+                <p>But only the first one has the little triangle, as it should!</p>
+                <p class="timerecieved">11:50pm</p>
+            </div>
         </div>
     </div>
     <div class="messagerow">
