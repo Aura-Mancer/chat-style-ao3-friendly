@@ -35,7 +35,7 @@ p{
     color:black;
 }
 /*Triangles of the chat bubbles*/
-.sentbubble.first:before, .imgsentbubble:before{
+.sentbubble.first:before, .imgsentbubble.first::before{
     content: "";
     height: 0px;
     position: absolute;
