@@ -13,7 +13,7 @@ p{
 }
 /*text bubbles*/
 .sentbubble, .receivedbubble{
-    padding: 10px;
+    padding: 0.5rem .875rem;
     margin: 3px 10px;
     border-radius: 0.9rem; 
     position: relative;
@@ -33,11 +33,9 @@ p{
 .receivedbubble{
     background-color: #e5e5ea;
     color:black;
-    line-height: 1.25rem;
-    padding: 0.5rem .875rem;
 }
 /*Triangles of the chat bubbles*/
-.sentbubble.first:before{
+.sentbubble.first:before, .imgsentbubble:before{
     content: "";
     height: 0px;
     position: absolute;
@@ -50,7 +48,7 @@ p{
     top: 0px;
     width: 0px;
 }
-.receivedbubble.first:before{
+.receivedbubble.first:before, .imgreceivedbubble.first:before{
     width: 0px;
     content: "";
     left: -13px;
@@ -118,3 +116,35 @@ p{
 }
 
 /*Images*/
+.imgreceivedbubble, .imgsentbubble{
+
+    line-height: 0rem;
+    padding: 0.4em;
+    margin: 3px 10px;
+    border-radius: 0.9rem; 
+    position: relative;
+
+}
+
+.imgreceivedbubble{
+    background-color: #e5e5ea;
+    color:black;
+}
+
+.imgsentbubble{
+    background-color:#248bf5;
+    color:white;
+}
+
+.imgreceivedbubble *, .imgsentbubble *{
+    max-width: 55vw;
+}
+
+.imgreceivedbubble img, .imgsentbubble img{
+    border-radius: 0.9rem;
+}
+
+.imgsentbubble p, .imgreceivedbubble p{
+    line-height: 1.25rem;
+    word-wrap: break-word;
+}
